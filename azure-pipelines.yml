@@ -84,6 +84,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'AzureLern-Space Game - web - Release-f1b9e41d-755b-4878-8020-268d834e158f'
+              azureSubscription: 'DKH_DevOpsPipelines-Service principal'
               appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
